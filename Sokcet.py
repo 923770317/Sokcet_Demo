@@ -6,7 +6,7 @@ port = 21567
 bufsize = 1024
 addr =(host,port)
 
-tcpSerSock = socket()
+tcpSerSock = socket(AF_INET,SOCK_STREAM)
 tcpSerSock.bind(addr)
 tcpSerSock.listen(5)
 

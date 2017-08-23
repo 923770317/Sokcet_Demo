@@ -1,11 +1,11 @@
 from socket import *
 
-host = 'localhost'
+host = '172.29.32.162'
 port = 21567
 bufsize = 1024
 addr =(host,port)
 
-tcpCliSock = socket()
+tcpCliSock = socket(AF_INET,SOCK_STREAM)
 tcpCliSock.connect(addr)
 
 while True:
