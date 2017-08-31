@@ -13,7 +13,7 @@ tcpSerSock.listen(5)
 while True:
     print 'waiting  for connection ....'
     tcpCliSokc,c_addr = tcpSerSock.accept()
-    print '.....connected from ',addr
+    print '.....connected from ',c_addr
 
     while True:
         data = tcpCliSokc.recv(bufsize)
